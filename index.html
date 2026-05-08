@@ -3,315 +3,341 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Checkout - Royal Taste</title>
+<title>Royal Taste | Digital Menu</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500;600;700&amp;family=Inter:wght@400;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-tertiary-fixed": "#1c1b1b",
-                        "surface-container": "#201f1f",
-                        "on-tertiary-fixed-variant": "#474746",
-                        "on-primary-fixed": "#241a00",
-                        "inverse-primary": "#735c00",
-                        "tertiary-fixed": "#e5e2e1",
-                        "surface-dim": "#131313",
-                        "outline": "#99907c",
-                        "on-primary-fixed-variant": "#574500",
-                        "on-primary": "#3c2f00",
-                        "on-error-container": "#ffdad6",
-                        "primary": "#f2ca50",
-                        "on-error": "#690005",
-                        "on-secondary-fixed-variant": "#544600",
-                        "error-container": "#93000a",
-                        "on-surface-variant": "#d0c5af",
-                        "inverse-surface": "#e5e2e1",
-                        "surface-bright": "#3a3939",
-                        "surface-container-high": "#2a2a2a",
-                        "on-tertiary-container": "#454544",
-                        "on-background": "#e5e2e1",
-                        "tertiary-container": "#b4b2b2",
-                        "surface-container-low": "#1c1b1b",
-                        "surface-container-lowest": "#0e0e0e",
-                        "surface-variant": "#353534",
-                        "on-primary-container": "#554300",
-                        "inverse-on-surface": "#313030",
-                        "surface-container-highest": "#353534",
-                        "background": "#131313",
-                        "secondary-container": "#ffdb3c",
-                        "primary-fixed": "#ffe088",
-                        "secondary-fixed": "#ffe16d",
-                        "surface": "#131313",
-                        "on-surface": "#e5e2e1",
-                        "outline-variant": "#4d4635",
-                        "primary-fixed-dim": "#e9c349",
-                        "secondary-fixed-dim": "#e9c400",
-                        "on-secondary-container": "#725f00",
-                        "on-secondary-fixed": "#221b00",
-                        "on-secondary": "#3a3000",
-                        "surface-tint": "#e9c349",
-                        "error": "#ffb4ab",
-                        "secondary": "#fff9ef",
-                        "on-tertiary": "#313030",
-                        "tertiary-fixed-dim": "#c8c6c5",
-                        "primary-container": "#d4af37",
-                        "tertiary": "#d0cdcd"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "container-max": "1280px",
-                        "element-gap": "16px",
-                        "unit": "8px",
-                        "margin-mobile": "20px",
-                        "gutter": "24px",
-                        "section-gap": "80px"
-                    },
-                    "fontFamily": {
-                        "body-md": ["Inter"],
-                        "label-caps": ["Inter"],
-                        "display-xl": ["Playfair Display"],
-                        "body-lg": ["Inter"],
-                        "headline-lg": ["Playfair Display"],
-                        "headline-md": ["Playfair Display"]
-                    },
-                    "fontSize": {
-                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
-                        "label-caps": ["12px", { "lineHeight": "1.2", "letterSpacing": "0.15em", "fontWeight": "600" }],
-                        "display-xl": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
-                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
-                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "600" }],
-                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "500" }]
-                    }
-                }
-            }
-        }
-    </script>
 <style>
-        .glass-panel {
-            background-color: rgba(32, 31, 31, 0.6);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-        }
-        .gold-gradient {
-            background: linear-gradient(135deg, #f2ca50 0%, #d4af37 100%);
-        }
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .input-minimal {
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid rgba(153, 144, 124, 0.5);
+        body {
+            background-color: #131313;
             color: #e5e2e1;
-            padding: 8px 0;
-            width: 100%;
-            transition: border-color 0.3s;
         }
-        .input-minimal:focus {
-            outline: none;
-            border-bottom-color: #d4af37;
-            box-shadow: none;
+        .glass-card {
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(77, 70, 53, 0.3);
         }
-        .input-minimal::placeholder {
-            color: rgba(208, 197, 175, 0.5);
+        .gold-glow:hover {
+            box-shadow: 0 0 20px rgba(242, 202, 80, 0.1);
         }
     </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-on-surface": "#313030",
+                      "on-surface": "#e5e2e1",
+                      "inverse-surface": "#e5e2e1",
+                      "on-error-container": "#ffdad6",
+                      "on-tertiary-container": "#454544",
+                      "surface-bright": "#393939",
+                      "surface-container-highest": "#353534",
+                      "on-primary": "#3c2f00",
+                      "surface-container-low": "#1c1b1b",
+                      "surface-dim": "#131313",
+                      "surface": "#131313",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "surface-tint": "#e9c349",
+                      "primary-fixed-dim": "#e9c349",
+                      "tertiary-fixed": "#e5e2e1",
+                      "tertiary-container": "#b4b2b2",
+                      "on-surface-variant": "#d0c5af",
+                      "inverse-primary": "#735c00",
+                      "tertiary": "#d0cdcd",
+                      "primary-fixed": "#ffe088",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "on-tertiary": "#313030",
+                      "error": "#ffb4ab",
+                      "outline": "#99907c",
+                      "on-secondary": "#402d00",
+                      "background": "#131313",
+                      "secondary": "#ffe2ab",
+                      "on-secondary-fixed": "#261a00",
+                      "on-background": "#e5e2e1",
+                      "surface-variant": "#353534",
+                      "surface-container-high": "#2a2a2a",
+                      "surface-container-lowest": "#0e0e0e",
+                      "error-container": "#93000a",
+                      "secondary-container": "#ffbf00",
+                      "secondary-fixed": "#ffdfa0",
+                      "outline-variant": "#4d4635",
+                      "on-error": "#690005",
+                      "on-tertiary-fixed": "#1c1b1b",
+                      "surface-container": "#201f1f",
+                      "on-secondary-fixed-variant": "#5c4300",
+                      "on-primary-container": "#554300",
+                      "secondary-fixed-dim": "#fbbc00",
+                      "primary-container": "#d4af37",
+                      "primary": "#f2ca50",
+                      "on-primary-fixed": "#241a00",
+                      "on-secondary-container": "#6d5000",
+                      "on-primary-fixed-variant": "#574500"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "section-gap": "120px",
+                      "margin-mobile": "20px",
+                      "gutter": "24px",
+                      "container-max": "1200px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "h2": ["Noto Serif"],
+                      "body-md": ["Inter"],
+                      "h3": ["Noto Serif"],
+                      "body-lg": ["Inter"],
+                      "label-caps": ["Inter"],
+                      "h1": ["Noto Serif"]
+              },
+              "fontSize": {
+                      "h2": ["36px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                      "h3": ["24px", {"lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0em", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                      "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
 </head>
-<body class="bg-background text-on-background antialiased min-h-screen pt-24 pb-24">
-<!-- Suppressed TopNavBar due to transactional intent (Checkout) -->
-<main class="max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-section-gap">
-<!-- Left Column: Checkout Form -->
-<div class="lg:col-span-7 space-y-12">
-<header>
-<h1 class="font-headline-lg text-headline-lg text-primary mb-2">Checkout</h1>
-<p class="font-body-md text-body-md text-on-surface-variant">Complete your order details below.</p>
-</header>
-<!-- Customer Information -->
-<section class="glass-panel rounded-xl p-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
-<div class="flex items-center gap-4 mb-8">
-<span class="material-symbols-outlined text-primary text-3xl">person</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Customer Information</h2>
+<body class="font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md dark:bg-surface/90 border-b border-outline-variant/20">
+<div class="flex justify-between items-center px-6 md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-h3 text-h3 font-bold text-primary dark:text-primary tracking-tighter">ROYAL TASTE</div>
+<div class="hidden md:flex gap-8 items-center font-body-md text-body-md uppercase tracking-widest">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" <a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#home">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Menu</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" <a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-300" <a class="text-on-surface-variant hover:text-primary transition-colors duration-300" href="#contact">Contact</a>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div>
-<label class="font-label-caps text-label-caps text-primary block mb-2">FIRST NAME</label>
-<input class="input-minimal font-body-md" placeholder="Enter your first name" type="text" value="Eleanor"/>
-</div>
-<div>
-<label class="font-label-caps text-label-caps text-primary block mb-2">LAST NAME</label>
-<input class="input-minimal font-body-md" placeholder="Enter your last name" type="text" value="Vance"/>
-</div>
-<div class="md:col-span-2">
-<label class="font-label-caps text-label-caps text-primary block mb-2">EMAIL ADDRESS</label>
-<input class="input-minimal font-body-md" placeholder="Enter your email" type="email" value="eleanor.vance@example.com"/>
-</div>
-<div class="md:col-span-2">
-<label class="font-label-caps text-label-caps text-primary block mb-2">PHONE NUMBER</label>
-<input class="input-minimal font-body-md" placeholder="Enter your phone number" type="tel" value="+1 (555) 019-8273"/>
+<div class="flex items-center gap-6">
+<button class="text-primary-container material-symbols-outlined" data-icon="shopping_cart">shopping_cart</button>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 font-bold scale-95 active:scale-90 transition-transform">Book a Table</button>
 </div>
 </div>
-</section>
-<!-- Delivery Address -->
-<section class="glass-panel rounded-xl p-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
-<div class="flex items-center gap-4 mb-8">
-<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Delivery Address</h2>
+</nav>
+<main id="home" class="pt-32 pb-section-gap px-6 md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Hero Search Section -->
+<div class="mb-16">
+<h1 class="font-h1 text-h1 text-primary mb-4">The Digital Menu</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Indulge in our curated selection of fine dining delights, crafted with the freshest seasonal ingredients and culinary mastery.</p>
+<div class="mt-8 flex flex-col md:flex-row gap-4 items-center">
+<div class="relative w-full md:w-96">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline" data-icon="search">search</span>
+<input class="w-full bg-surface-container border border-outline-variant/30 text-on-surface pl-12 pr-4 py-3 rounded-none focus:ring-1 focus:ring-primary focus:border-primary placeholder:text-outline/50 transition-all" placeholder="Search for your favorite dish..." type="text"/>
 </div>
-<div class="grid grid-cols-1 gap-8">
-<div>
-<label class="font-label-caps text-label-caps text-primary block mb-2">STREET ADDRESS</label>
-<input class="input-minimal font-body-md" placeholder="123 Main St" type="text" value="482 High Society Row"/>
-</div>
-<div>
-<label class="font-label-caps text-label-caps text-primary block mb-2">APARTMENT, SUITE, ETC. (OPTIONAL)</label>
-<input class="input-minimal font-body-md" placeholder="Apt 4B" type="text" value="Penthouse 3"/>
-</div>
-<div class="grid grid-cols-2 gap-8">
-<div>
-<label class="font-label-caps text-label-caps text-primary block mb-2">CITY</label>
-<input class="input-minimal font-body-md" placeholder="City" type="text" value="Metropolis"/>
-</div>
-<div>
-<label class="font-label-caps text-label-caps text-primary block mb-2">ZIP CODE</label>
-<input class="input-minimal font-body-md" placeholder="10001" type="text" value="10021"/>
-</div>
-</div>
-<div>
-<label class="font-label-caps text-label-caps text-primary block mb-2">DELIVERY INSTRUCTIONS</label>
-<input class="input-minimal font-body-md" placeholder="E.g., Leave at door" type="text" value="Please leave with the concierge."/>
-</div>
-</div>
-</section>
-<!-- Payment Method -->
-<section class="glass-panel rounded-xl p-8 shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
-<div class="flex items-center gap-4 mb-8">
-<span class="material-symbols-outlined text-primary text-3xl">credit_card</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Payment Method</h2>
-</div>
-<div class="space-y-4 mb-8">
-<!-- Credit Card Option -->
-<label class="flex items-center p-4 border border-primary/40 rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors bg-surface-container-high shadow-[0_0_15px_rgba(212,175,55,0.1)]">
-<input checked="" class="text-primary bg-transparent border-outline focus:ring-primary h-5 w-5" name="payment" type="radio"/>
-<span class="ml-4 font-body-lg text-body-lg text-on-surface flex-grow">Credit Card</span>
-<div class="flex gap-2">
-<span class="material-symbols-outlined text-on-surface-variant">credit_score</span>
-</div>
-</label>
-<!-- Apple Pay Option -->
-<label class="flex items-center p-4 border border-outline/30 rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors">
-<input class="text-primary bg-transparent border-outline focus:ring-primary h-5 w-5" name="payment" type="radio"/>
-<span class="ml-4 font-body-lg text-body-lg text-on-surface flex-grow">Apple Pay</span>
-<span class="material-symbols-outlined text-on-surface-variant">phone_iphone</span>
-</label>
-<!-- PayPal Option -->
-<label class="flex items-center p-4 border border-outline/30 rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors">
-<input class="text-primary bg-transparent border-outline focus:ring-primary h-5 w-5" name="payment" type="radio"/>
-<span class="ml-4 font-body-lg text-body-lg text-on-surface flex-grow">PayPal</span>
-<span class="material-symbols-outlined text-on-surface-variant">payments</span>
-</label>
-</div>
-<!-- Credit Card Details (Active) -->
-<div class="grid grid-cols-1 gap-8 mt-6 pt-6 border-t border-outline/20">
-<div>
-<label class="font-label-caps text-label-caps text-primary block mb-2">CARD NUMBER</label>
-<input class="input-minimal font-body-md" placeholder="0000 0000 0000 0000" type="text"/>
-</div>
-<div class="grid grid-cols-2 gap-8">
-<div>
-<label class="font-label-caps text-label-caps text-primary block mb-2">EXPIRATION DATE</label>
-<input class="input-minimal font-body-md" placeholder="MM/YY" type="text"/>
-</div>
-<div>
-<label class="font-label-caps text-label-caps text-primary block mb-2">CVV</label>
-<input class="input-minimal font-body-md" placeholder="123" type="text"/>
+<div class="flex gap-4 overflow-x-auto pb-2 w-full no-scrollbar">
+<button class="whitespace-nowrap px-6 py-2 border-b-2 border-primary text-primary font-bold">Appetizers</button>
+<button class="whitespace-nowrap px-6 py-2 border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-colors">Main Course</button>
+<button class="whitespace-nowrap px-6 py-2 border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-colors">Desserts</button>
+<button class="whitespace-nowrap px-6 py-2 border-b-2 border-transparent text-on-surface-variant hover:text-primary transition-colors">Beverages</button>
 </div>
 </div>
 </div>
-</section>
+<!-- Menu Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Dish Card 1 -->
+<div class="glass-card group flex flex-col gold-glow transition-all">
+<div class="relative h-64 overflow-hidden">
+<img alt="Wagyu Carpaccio" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A high-contrast gourmet photography of a seared wagyu beef appetizer served with micro-greens and a rich balsamic reduction. The lighting is moody and low-key, emphasizing the succulent textures and deep browns of the meat against a black slate platter. The overall aesthetic is ultra-premium and luxurious, consistent with a Culinary Noir theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD96p9--xckFXptqS5tOTvJpM5xlsVQivA9Cdo_rB4f2As2c4T8b-WaWS7ZspCReT53dIswXkEmuBeoNluOtHUWUBgzIs0sHq-EgfCHXNVdJEgNmP6qyr4GnSlAeArL-N715llUt94y55VmsOUQgiSEYBRVHP4ObjHZU3n79nlO1UHcL6bTfWGd6Mq1BYC1-hzqQKSOhbjRoyzve0fslxuVAggtvmLBhqmdhhxnN5eANG8faz5Zy4MHAe5tvco5VsFA_RI6Iyc2Fls"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary font-bold px-3 py-1 text-sm">$28.00</div>
 </div>
-<!-- Right Column: Order Summary -->
-<div class="lg:col-span-5">
-<div class="glass-panel rounded-xl p-8 sticky top-32 shadow-[0_12px_40px_rgba(0,0,0,0.5)] border-t border-primary/30">
-<h2 class="font-headline-md text-headline-md text-primary mb-8 border-b border-primary/20 pb-4">Order Summary</h2>
-<!-- Items -->
-<div class="space-y-6 mb-8">
-<!-- Item 1 -->
-<div class="flex items-start gap-4">
-<div class="w-16 h-16 rounded bg-surface-container-high overflow-hidden flex-shrink-0 border border-outline/20">
-<img alt="Truffle Risotto" class="w-full h-full object-cover" data-alt="A close-up shot of a luxurious truffle risotto served in a dark ceramic bowl. The lighting is moody and dramatic, highlighting the shaved black truffles on top. The background is a blurred dark surface, consistent with the Modern Aristocrat aesthetic. Soft gold accents from the lighting reflect on the creamy rice." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAX4r3OQP9TVY8Gc1Zl-iV3TgSSAJw1GgCjOdE0tECSbq0zf7EJEwIIKsRYFJ2oeMqM0cDMN6iNcKgHChS86oEosSATpsle6oFIujN-PZ9gK_MwjNU29sOX8-sfO5O-1448QtZsge-BKXYMjI_CQezVZx-GLXhgg6sEhR9mGq6lpokIorsvNF14wPYiADNLeLC7_hCrSXiqbIX9SmIejkkftNtCgHSpA8xHukPPIRNMXUvKw8CLas2fTIX-FDWWu7NxlGrOylWklz-"/>
-</div>
-<div class="flex-grow">
-<h3 class="font-body-lg text-body-lg text-on-surface">Truffle Infused Risotto</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Qty: 2</p>
-</div>
-<span class="font-body-lg text-body-lg text-primary">$84.00</span>
-</div>
-<!-- Item 2 -->
-<div class="flex items-start gap-4">
-<div class="w-16 h-16 rounded bg-surface-container-high overflow-hidden flex-shrink-0 border border-outline/20">
-<img alt="Wagyu Steak" class="w-full h-full object-cover" data-alt="A perfectly seared Wagyu beef steak resting on a minimalist slate plate. The meat is sliced to reveal a medium-rare pink center. High-end culinary photography style with dark, cinematic lighting. A subtle gold-rimmed wine glass is barely visible in the dark background. The scene exudes wealth and fine dining." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5gB12eyfpRySarWo5h2eLzq_VePiFDrYNs-fHQlcYB_LnzG8sCWMhM-ykJtRDCxwz7KWexGfjsXYlKRkSZ9JeMMhP5w7f6IMsnoEtoZrVKDWQPJ3zQsuKWr3yEA_2bLlrE_1T3j4y_vXn-ozOzloNcmYSwb2N0NPTLiqRLJZqaK5F_lRp3BrFd8SSydl2DmkESXGA6jZgd-dsJx23MYXAH9Z_-P01R67yypknlezhQ0eIM1bRGj9WtGrpAfsT1tm0MzfgO5wGQ-b7"/>
-</div>
-<div class="flex-grow">
-<h3 class="font-body-lg text-body-lg text-on-surface">A5 Wagyu Ribeye</h3>
-<p class="font-body-md text-body-md text-on-surface-variant text-sm mt-1">Qty: 1</p>
-</div>
-<span class="font-body-lg text-body-lg text-primary">$150.00</span>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-h3 text-h3 text-primary mb-2">Wagyu Carpaccio</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Thinly sliced A5 Wagyu, truffle oil, capers, and 24-month aged parmesan shavings.</p>
+<button class="w-full bg-primary-container text-on-primary-container py-3 font-bold hover:bg-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
 </div>
 </div>
-<!-- Totals -->
-<div class="border-t border-primary/20 pt-6 space-y-4 mb-8">
-<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
-<span>Subtotal</span>
-<span>$234.00</span>
+<!-- Dish Card 2 -->
+<div class="glass-card group flex flex-col gold-glow transition-all">
+<div class="relative h-64 overflow-hidden">
+<img alt="Golden Scallops" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="An exquisite seafood starter featuring scallops seared to perfection, garnished with edible gold flakes and a vibrant citrus foam. The setting is a dimly lit, five-star restaurant table with dark linen. The lighting highlights the glistening moisture and delicate texture of the scallops, creating a sophisticated and expensive atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMIYyDDu17cVvI_YtK0WtToC63qweJ5fSX4Z916I1I568msa5NvwE2Gb9iDbjbbbK-_hQBQ7hOLH0kMCha-qKsZO4OJBqPx1-tiE0hzMXG77-9-Z6-SWZXDdNLHSw5eBAb-Wo2doU-2x6Jq0rMCP6s-UnMLd5LBpDMPF5rOQjQw4CLFcqUZs-jp32LeNjoZxmTVm5AmaQOc6-ILRgNV0s3-OjUEaPsKrJ5jptCEZDHPHYdNgqN0OWK7Nxlc0gCBrvk3T8ujpUeGkI"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary font-bold px-3 py-1 text-sm">$32.00</div>
 </div>
-<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
-<span>Delivery Fee</span>
-<span>$15.00</span>
-</div>
-<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
-<span>Taxes</span>
-<span>$21.06</span>
-</div>
-<div class="flex justify-between items-center border-t border-primary/40 pt-4 mt-4">
-<span class="font-headline-md text-headline-md text-on-surface">Total</span>
-<span class="font-headline-md text-headline-md text-primary">$270.06</span>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-h3 text-h3 text-primary mb-2">Golden Scallops</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Hokkaido scallops with citrus foam, edible gold leaf, and a hint of smoked paprika.</p>
+<button class="w-full bg-primary-container text-on-primary-container py-3 font-bold hover:bg-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
 </div>
 </div>
-<!-- CTA -->
-<button class="w-full gold-gradient text-on-primary-fixed font-body-lg font-semibold py-4 px-6 rounded-lg shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:scale-[1.02] transition-transform duration-300 flex justify-center items-center gap-2">
-<span class="material-symbols-outlined">lock</span>
-                    Place Order
-                </button>
-<p class="text-center font-label-caps text-label-caps text-on-surface-variant mt-4 opacity-70">
-                    SECURE ENCRYPTED CHECKOUT
-                </p>
+<!-- Dish Card 3 -->
+<div class="glass-card group flex flex-col gold-glow transition-all">
+<div class="relative h-64 overflow-hidden">
+<img alt="Truffle Tart" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A minimalist presentation of wild mushroom truffle tart in a dark, atmospheric setting. The crust is golden and flaky, while the earthy tones of the mushrooms are accentuated by soft, warm amber lighting. The background is a deep charcoal grey, allowing the warm highlights of the tart to stand out as the primary visual focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXk2ESfKU1P4gPV-trR97UIFk7PagMM64WgsE6I3Ra2R6OuXg3RaIFeiCGsTVIXEyb6QA0IyaVfF09t9pWFoE7WsOYWgxgdYxHxj2AZjbC38x4ODoTCTXLso1gqtqd8uf_exSOkltyPQCTKmRWitr-1cFtr2CgLIzQ5U2UHmYghp7PsNsJnzdDK0VM9Nfd51Hjwh_KPmrgYs58sJ54YFTlmSqkIuBtpvOgvs45_uD0I35EBu2IX37EyOStgLRn4esoR6RVdXkBph8"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary font-bold px-3 py-1 text-sm">$24.00</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-h3 text-h3 text-primary mb-2">Truffle Tart</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Forest mushrooms, black truffle cream, and a buttery, flaky pastry shell.</p>
+<button class="w-full bg-primary-container text-on-primary-container py-3 font-bold hover:bg-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
+</div>
+<!-- Dish Card 4 -->
+<div class="glass-card group flex flex-col gold-glow transition-all">
+<div class="relative h-64 overflow-hidden">
+<img alt="Glazed Salmon" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A premium salmon dish presented with minimalist precision. The pink salmon fillet is perfectly cooked, resting on a bed of dark green kale with vibrant edible flowers. The shot is high-contrast, featuring deep shadows and crystalline highlights on the fish. The overall feel is modern, clean, and extremely upscale." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF3sVdqIU5a4bE8s-r66PWxxRlUBAyqGy5saBbqT_41VBYNWRyAhgbiGODn0i7XHL_YnaGtbha8r_Lxu7dZYyx0rnOPt1ZvMuwsPJqudMNa7juLuJb5nk2f3bM3IZbal9qmcSi9vc_qRB6FFt3C4H56NDpHFxEyx-rZ7JjsXewDqKBZG60ajOcKGYlbUwsr4A4K146V7MOmjNFpBOYRqdW0o7r-MskUtWx1sfZtHSxSTfne1Md1EOmvJD_Q6qVnI8nZSRw7XRajZI"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary font-bold px-3 py-1 text-sm">$45.00</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-h3 text-h3 text-primary mb-2">Glazed Salmon</h3>
+<p class="font-body-md text-on-surface-variant mb-6 flex-grow">Miso-glazed Atlantic salmon with wilted greens and ginger-infused reduction.</p>
+<button class="w-full bg-primary-container text-on-primary-container py-3 font-bold hover:bg-primary transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="add_shopping_cart">add_shopping_cart</span>
+                        Add to Cart
+                    </button>
+</div>
 </div>
 </div>
 </main>
-<!-- Footer from JSON -->
-<footer class="bg-surface-container-lowest w-full border-t border-primary/10 flat grid grid-cols-1 md:grid-cols-4 gap-section-gap px-gutter py-section-gap max-w-container-max mx-auto mt-24">
-<div class="col-span-1 md:col-span-4 flex flex-col md:flex-row justify-between items-center gap-8">
-<span class="font-display-xl text-headline-lg text-primary">Royal Taste</span>
-<div class="flex flex-wrap gap-6 justify-center">
-<a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
-<a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
-<a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="#">Sustainability</a>
-<a class="font-body-md text-body-md text-on-tertiary-fixed-variant hover:text-primary transition-colors" href="#">Careers</a>
+<!-- SideNavBar (Cart Sidebar) -->
+<aside class="fixed right-0 top-0 h-full w-full md:w-96 z-[60] bg-surface-container dark:bg-surface-container border-l border-outline-variant/30 shadow-2xl flex flex-col translate-x-0 transition-transform duration-500">
+<div class="p-8 border-b border-outline-variant/20 flex justify-between items-center">
+<div>
+<h2 class="font-h2 text-h2 text-primary">Your Selection</h2>
+<p class="font-body-md text-on-surface-variant opacity-70">Exclusive Culinary Experience</p>
+</div>
+<button class="material-symbols-outlined text-on-surface-variant" data-icon="close">close</button>
+</div>
+<div class="flex-grow overflow-y-auto py-6">
+<!-- Cart Item 1 -->
+<div class="mx-4 mb-4 p-4 bg-surface-container-high rounded-none border border-outline-variant/20 flex gap-4">
+<div class="w-16 h-16 bg-surface-container-lowest overflow-hidden">
+<img alt="Wagyu Carpaccio Small" class="w-full h-full object-cover" data-alt="Small thumbnail of the Wagyu Carpaccio appetizer dish for the cart sidebar, maintaining the high-contrast dark aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLDzR_3pwaoK_CHPSBhdEAEDmeDvTWVeqCDhhvmtDdn2jCu6i9W30f7MDVYpmniIEXpT4sRQoE7vtjawcCJrPMOkr-AHZ0LV-sOyWTonu38z2V82b2y8wUIR8fGXWl6hWwblpoAJPaQJe2LfiUzaHqdBOZaPgH0OB5st_ApvnimrvSBFoK2b-VFowoXwhEZN8xGHKwLPGQATVM6cBsG2lz7b3m0HTlENVYOhpoiW7BL8d-W8N1mfzEuiVTly8edluuzJJ-h5hdkhg"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-on-surface">Wagyu Carpaccio</h4>
+<span class="text-primary font-bold">$28.00</span>
+</div>
+<div class="flex items-center gap-3 mt-2">
+<button class="w-6 h-6 flex items-center justify-center border border-outline-variant/50 hover:bg-outline-variant/20 transition-colors">
+<span class="material-symbols-outlined text-xs" data-icon="remove">remove</span>
+</button>
+<span class="font-body-md">1</span>
+<button class="w-6 h-6 flex items-center justify-center border border-outline-variant/50 hover:bg-outline-variant/20 transition-colors">
+<span class="material-symbols-outlined text-xs" data-icon="add">add</span>
+</button>
 </div>
 </div>
-<div class="col-span-1 md:col-span-4 text-center mt-8">
-<p class="font-body-md text-body-md text-on-tertiary-fixed-variant">© 2024 Royal Taste. Artistry in Every Bite.</p>
+</div>
+<!-- Cart Item 2 -->
+<div class="mx-4 mb-4 p-4 bg-surface-container-high rounded-none border border-outline-variant/20 flex gap-4">
+<div class="w-16 h-16 bg-surface-container-lowest overflow-hidden">
+<img alt="Scallops Small" class="w-full h-full object-cover" data-alt="Small thumbnail of the Golden Scallops appetizer dish for the cart sidebar, maintaining the high-contrast dark aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNqn68Z4rImyXVtXYr9fs01qgg1ZtxRPHFRsEooQ8LMa-mRAcpHdN-eZTXHTedzDMP2Y12iToCO1r2YPYzAbJvMqQcUtvImF8Ezf-Li7dqVaRQ95DHTk8-iSRlXutG5JeHO8MJg2JJ22C36luzBip6YCg68dXBe5apvX0q_Cu9uxTs1jMWldZPKjsnEHV8a30N2Bq7ww470v9nHSr0Jsckff_HwB4nT5clKwNOg92Xs6WzowEe6rqzDbIWmxIxORVYM3KAiSZkpyw"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start">
+<h4 class="font-bold text-on-surface">Golden Scallops</h4>
+<span class="text-primary font-bold">$32.00</span>
+</div>
+<div class="flex items-center gap-3 mt-2">
+<button class="w-6 h-6 flex items-center justify-center border border-outline-variant/50 hover:bg-outline-variant/20 transition-colors">
+<span class="material-symbols-outlined text-xs" data-icon="remove">remove</span>
+</button>
+<span class="font-body-md">2</span>
+<button class="w-6 h-6 flex items-center justify-center border border-outline-variant/50 hover:bg-outline-variant/20 transition-colors">
+<span class="material-symbols-outlined text-xs" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Navigation Links for SideNav as per JSON -->
+<div class="mt-8 pt-8 border-t border-outline-variant/20">
+<div class="bg-primary-container text-on-primary-container rounded-xl mx-4 my-2 p-4 flex items-center gap-4">
+<span class="material-symbols-outlined" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="font-body-lg">Current Selection</span>
+</div>
+<div class="text-on-surface-variant hover:text-on-surface mx-4 my-2 p-4 flex items-center gap-4 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined" data-icon="wine_bar">wine_bar</span>
+<span class="font-body-lg">Wine List</span>
+</div>
+<div class="text-on-surface-variant hover:text-on-surface mx-4 my-2 p-4 flex items-center gap-4 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined" data-icon="event_note">event_note</span>
+<span class="font-body-lg">Special Requests</span>
+</div>
+<div class="text-on-surface-variant hover:text-on-surface mx-4 my-2 p-4 flex items-center gap-4 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-body-lg">Payment</span>
+</div>
+</div>
+</div>
+<div class="p-8 border-t border-outline-variant/20 bg-surface-container-lowest">
+<div class="flex justify-between items-center mb-6">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant">Estimated Total</span>
+<span class="font-h3 text-h3 text-primary">$92.00</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 font-bold tracking-widest uppercase hover:opacity-90 transition-opacity">Checkout Now</button>
+</div>
+</aside>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-outline-variant/10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-6 md:px-margin-desktop max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="font-h3 text-h3 text-primary uppercase tracking-widest mb-6">ROYAL TASTE</div>
+<p class="font-body-md text-on-surface-variant opacity-80 mb-6">Defining culinary excellence through artistry, flavor, and a dedication to the extraordinary.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-6 tracking-widest">Connect</h4>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li><a class="hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="#">Facebook</a></li>
+<li><a class="hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="#">Instagram</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-6 tracking-widest">Visit</h4>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li><a class="hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="#">Location</a></li>
+<li><a class="hover:text-secondary transition-colors opacity-80 hover:opacity-100" href="#">Operating Hours</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary uppercase mb-6 tracking-widest">Newsletter</h4>
+<p class="font-body-md text-on-surface-variant opacity-80 mb-4">Join our exclusive mailing list for special seasonal updates.</p>
+<div class="relative">
+<input class="w-full bg-surface border-b border-outline-variant/50 py-2 focus:outline-none focus:border-primary transition-colors text-on-surface" placeholder="Email Address" type="email"/>
+<button class="absolute right-0 top-1/2 -translate-y-1/2 material-symbols-outlined text-primary" data-icon="arrow_forward">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-6 md:px-margin-desktop mt-20 pt-8 border-t border-outline-variant/5 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 ROYAL TASTE. DEFINING CULINARY EXCELLENCE.</p>
 </div>
 </footer>
-</body></html>
+<section id="about" style="padding:60px; color:white; background:#1a1a1a;">
+    <h1 style="font-size:40px; color:gold;">About Us</h1>
+    <p style="font-size:18px; margin-top:20px;">
+        Royal Taste delivers a premium luxury dining experience with
+        world-class dishes and elegant ambiance.
+    </p>
+</section>
+
+<section id="contact" style="padding:60px; color:white;">
+    <h1 style="font-size:40px; color:gold;">Contact Us</h1>
+    <p style="margin-top:20px;">Phone: +91 9876543210</p>
+    <p>Email: royaltaste@email.com</p>
+</section>
+</body>
+</html>       
